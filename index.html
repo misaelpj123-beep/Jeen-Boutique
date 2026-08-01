@@ -1,18 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Jeen Boutique</title>
-  <style>
-    body { font-family: Arial; text-align: center; background: #fff0f5; padding: 50px; }
-    h1 { color: #d63384; }
-    .btn { background: #25D366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 10px; font-size: 18px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeen Boutique | Ropa Exclusiva</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #E8E0D8;
+            color: #3D342C;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background-color: #DAD2C9;
+            position: sticky;
+            top: 0;
+        }
+        .logo { font-size: 1.5em; font-weight: bold; letter-spacing: 2px; }
+        .menu a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #3D342C;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .btn-login {
+            background: #3D342C;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .hero {
+            display: flex;
+            padding: 60px 8%;
+            gap: 60px;
+            align-items: center;
+        }
+        .hero-text h1 {
+            font-size: 4em;
+            font-style: italic;
+            font-weight: 300;
+        }
+        .hero-text h2 {
+            font-size: 2em;
+            margin: 10px 0 20px;
+        }
+        .hero-text p { font-size: 1.1em; line-height: 1.6; }
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 30px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .hero-img img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .products {
+            padding: 60px 8%;
+            background: white;
+            text-align: center;
+        }
+        .products h3 { font-size: 2.5em; margin-bottom: 40px; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #3D342C;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-  <h1>✨ Jeen Boutique ✨</h1>
-  <p>Tu tienda de ropa online</p>
-  <img src="https://via.placeholder.com/300x300/d63384/ffffff?text=Jeen+Boutique" width="300">
-  <br><br>
-  <a href="https://wa.me/1XXXXXXXXXX" class="btn">Escríbeme por WhatsApp</a>
+    <header>
+        <div class="logo">🛍️ JEEN BOUTIQUE</div>
+        <nav class="menu">
+            <a href="#">INICIO</a>
+            <a href="#">NOSOTROS</a>
+            <a href="#">COLECCIÓN</a>
+            <a href="#">CONTACTO</a>
+            <a href="#" class="btn-login">Login</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <p>>>>>>>></p>
+            <h1>Beautiful</h1>
+            <h2>Boutique</h2>
+            <p>Hasta 50% de descuento en la nueva colección. Ropa única, estilo único. Hecho para mujeres que imponen tendencia.</p>
+            <a href="https://wa.me/18293264235" target="_blank" class="btn-whatsapp">
+                Escríbeme por WhatsApp
+            </a>
+        </div>
+        <div class="hero-img">
+            <img src="TU_FOTO_1.jpg" alt="Conjunto Jeen Boutique">
+            <div style="background:white; padding:15px; margin-top:15px; border-radius:8px;">New Styles</div>
+        </div>
+    </section>
+
+    <section class="products">
+        <h3>Nueva Colección</h3>
+        <div class="grid">
+            <img src="TU_FOTO_1.jpg" alt="Conjunto cuadros">
+            <img src="TU_FOTO_2.jpg" alt="Vestido floral">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Jeen Boutique. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
